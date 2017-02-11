@@ -58,8 +58,6 @@ super_power = ask("\nQuestion #8: What super-power would you most like to have?"
 # Question 9
 baked_good = ask("\nQuestion #9: What is your favorite baked good? (Just asking for a friend who may or may not be an apprentice.)")
 
-########## QUESTION: If the output for both of the sections below was the same. Could puts and target.write be combined in one statement?
-
 # Review + thank you
 puts "\n#{name} #{middle_name}, you've been a great sport. Thank you for playing along!"
 puts "Here's your responses to my very serious questions: "
