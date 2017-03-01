@@ -6,10 +6,10 @@
 require "./hello_functions"
 
 # pass the name of the text file into the variable filename
-filename = ARGV.first
+filename = "./helloYou.txt"
 
 # open file and add to existing file content
-file = open(filename, 'a+')
+file = open(filename, 'a+')    
 
 # Introduction
 name = ask("Hello friend! What's your name?")
@@ -68,13 +68,13 @@ respond($stdout, "If you where an animal, you would be a %s.", animal)
 respond($stdout, "The super-power you would like to have is to %s.", super_power)
 respond($stdout, "If you're lucky, one of the apprentices may make %s someday. Maybe.", baked_good)
 
-# Write results to text file.
+# Write results to text file.   
 respond(file, "%s %s results:", name, middle_name)
 respond(file, "Middle name is %s.", middle_name)
 respond(file, "If %s was really hungry, really exhausted AND really gross, he/she would %s first.", name, really_what)
 respond(file, "%s answered %s for sneaking into a movie.", name, sneaky)
 respond(file, "If %s had a time machine, he/she would visit %s.", name, time_machine)
-respond(file, "\nIf %s could go anywhere on vacation, he/she would go to %s.", name, vacation)
+respond(file, "If %s could go anywhere on vacation, he/she would go to %s.", name, vacation)
 respond(file, "%s best describes %s's personality.", food, name)
 respond(file, "If %s were an animal, he/she would be a %s.", name, animal)
 respond(file, "%s's super-power would be to %s.", name, super_power)
